@@ -1,0 +1,68 @@
+Interim Report – Task 1: Exploratory Data Analysis (EDA) of Brent Oil Prices
+1. Introduction
+The objective of Task 1 is to perform an exploratory data analysis (EDA) of historical Brent crude oil prices in order to understand long-term trends, volatility patterns, and the relationship between major global events and oil price movements. This initial analysis provides the foundation for later change point detection and modeling tasks.
+2. Data Description
+2.1 Brent Oil Price Data
+•	Dataset: BrentOilPrices.csv
+•	Frequency: Daily
+•	Key variables:
+o	Date
+o	Brent crude oil price (USD per barrel)
+The dataset spans multiple years and captures periods of market stability, sharp price shocks, and high volatility.
+2.2 Event Data
+A structured event dataset was created to capture major geopolitical, economic, and oil-market-related events that could influence Brent oil prices. This dataset is stored as a CSV file for easy integration with the price data.
+3. Planned Analysis Steps for Task 1
+Step 1: Data Cleaning and Preparation
+•	Convert date columns to proper datetime format
+•	Sort observations chronologically
+•	Handle missing or inconsistent values
+•	Ensure alignment between price data and event dates
+Step 2: Price Trend Visualization
+•	Plot Brent oil prices over time to identify:
+o	Long-term trends
+o	Periods of sharp increase or decline
+o	Structural shifts in price behavior
+📌 Figure 1: Brent Oil Prices Over Time
+ 
+Step 3: Event-Based Visualization
+•	Overlay major global events on the price time series
+•	Examine price behavior around:
+o	Wars and geopolitical conflicts
+o	OPEC policy decisions
+o	Global economic crises
+📌 Figure 2: Brent Oil Prices with Major Events
+ 
+Step 4: Volatility and Return Analysis
+•	Compute daily log returns to normalize price changes
+•	Calculate rolling volatility to identify periods of heightened market uncertainty
+•	Visually assess volatility clustering and market stress periods
+4. Structured Event Dataset (Task 1)
+The following table summarizes key events included in the analysis:
+Date	Event Description
+2011-02-15	Libyan Civil War begins
+2014-11-27	OPEC decision to maintain production
+2016-01-16	Iran sanctions lifted
+2016-11-30	OPEC production cut agreement
+2018-05-08	US withdraws from Iran nuclear deal
+2020-03-08	Saudi–Russia oil price war
+2020-03-11	COVID-19 declared a pandemic
+2020-04-12	Historic OPEC+ production cuts
+2021-10-01	Global energy supply crisis
+2022-02-24	Russia–Ukraine war begins
+
+5. Assumptions
+The Task 1 analysis is based on the following assumptions:
+1.	Brent oil prices reflect global oil market conditions.
+2.	Major geopolitical and economic events have observable impacts on oil prices.
+3.	Event effects occur either immediately or within a short time window.
+4.	Historical price data is accurate and reliable.
+5.	Visual inspection is sufficient for identifying broad patterns in Task 1.
+6. Limitations
+•	The analysis is descriptive, not causal.
+•	Some relevant events may be missing from the dataset.
+•	Market reactions may occur before or after the listed event dates.
+•	Other influencing factors (exchange rates, inflation, speculation) are not included.
+•	Visual interpretation may be subjective.
+7. Conclusion
+Task 1 establishes a clear understanding of Brent oil price behavior over time and highlights the relationship between major global events and price movements. These insights provide the groundwork for Task 2, which will apply formal change point detection techniques to quantitatively identify structural breaks in the price series.
+
